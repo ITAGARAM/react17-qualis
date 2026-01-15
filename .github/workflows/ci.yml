@@ -35,7 +35,7 @@ jobs:
       - name: Upload JAR artifact
         uses: actions/upload-artifact@v4
         with:
-          name: spring-boot-app
+          name: ReactJS17QuaLIS-V3
           path: target/*.jar
 
       # 5️⃣ SonarQube scan
@@ -45,7 +45,7 @@ jobs:
         run: |
           mvn sonar:sonar \
             -DskipTests \
-            -Dsonar.projectKey=spring-boot-app \
+            -Dsonar.projectKey=ReactJS17QuaLIS-V3 \
             -Dsonar.host.url=${{ secrets.SONAR_HOST_URL }} \
             -Dsonar.branch.name=main \
             -Dsonar.scm.provider=git
