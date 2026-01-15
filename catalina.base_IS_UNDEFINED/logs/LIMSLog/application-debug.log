@@ -537,4 +537,81 @@
   "logger" : "com.zaxxer.hikari.HikariDataSource",
   "message" : "HikariPool-1 - Shutdown completed.",
   "context" : "default"
+}{
+  "timestamp" : "2026-01-15 20:36:40.349",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.test.context.support.AnnotationConfigContextLoaderUtils",
+  "message" : "Could not detect default configuration classes for test class [com.agaramtech.qualis.QualisApplicationTests]: QualisApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.",
+  "context" : "default"
+}{
+  "timestamp" : "2026-01-15 20:36:40.712",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.boot.test.context.SpringBootTestContextBootstrapper",
+  "message" : "Found @SpringBootConfiguration com.agaramtech.qualis.QualisApplication for test class com.agaramtech.qualis.QualisApplicationTests",
+  "context" : "default"
+}{
+  "timestamp" : "2026-01-15 20:36:41.339",
+  "level" : "WARN",
+  "thread" : "main",
+  "logger" : "org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer",
+  "message" : "\r\n\r\nFound multiple occurrences of org.json.JSONObject on the class path:\r\n\r\n\tjar:file:/C:/Users/ate153/.m2/repository/org/json/json/20240303/json-20240303.jar!/org/json/JSONObject.class\r\n\tjar:file:/C:/Users/ate153/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class\r\n\r\nYou may wish to exclude one of them to ensure predictable runtime behavior\r\n",
+  "context" : "default"
+}{
+  "timestamp" : "2026-01-15 20:36:41.381",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.agaramtech.qualis.QualisApplicationTests",
+  "message" : "Starting QualisApplicationTests using Java 21.0.5 with PID 37292 (started by ATE153 in D:\\WorkingFolder\\LIMS\\ALPDJ21\\branches\\01-mainbranch\\BGSI-SOURCE\\BRANCHES\\React17\\source\\qualis)",
+  "context" : "default"
+}{
+  "timestamp" : "2026-01-15 20:36:41.385",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.agaramtech.qualis.QualisApplicationTests",
+  "message" : "No active profile set, falling back to 1 default profile: \"default\"",
+  "context" : "default"
+}{
+  "timestamp" : "2026-01-15 20:36:54.723",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariDataSource",
+  "message" : "HikariPool-1 - Starting...",
+  "context" : "default"
+}{
+  "timestamp" : "2026-01-15 20:36:55.047",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.pool.HikariPool",
+  "message" : "HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1f3f0d25",
+  "context" : "default"
+}{
+  "timestamp" : "2026-01-15 20:36:55.051",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariDataSource",
+  "message" : "HikariPool-1 - Start completed.",
+  "context" : "default"
+}{
+  "timestamp" : "2026-01-15 20:36:55.879",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.agaramtech.qualis.QualisApplicationTests",
+  "message" : "Started QualisApplicationTests in 14.896 seconds (process running for 17.028)",
+  "context" : "default"
+}{
+  "timestamp" : "2026-01-15 20:36:57.287",
+  "level" : "INFO",
+  "thread" : "SpringApplicationShutdownHook",
+  "logger" : "com.zaxxer.hikari.HikariDataSource",
+  "message" : "HikariPool-1 - Shutdown initiated...",
+  "context" : "default"
+}{
+  "timestamp" : "2026-01-15 20:36:57.308",
+  "level" : "INFO",
+  "thread" : "SpringApplicationShutdownHook",
+  "logger" : "com.zaxxer.hikari.HikariDataSource",
+  "message" : "HikariPool-1 - Shutdown completed.",
+  "context" : "default"
 }
