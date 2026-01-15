@@ -9,11 +9,17 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # If your SonarQube server is local, use:
+    # runs-on: self-hosted
 
     steps:
+      # 1️⃣ Checkout code (full history required for SonarQube)
       - name: Checkout source code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
+      # 2️⃣ Set up Oracle JDK 21
       - name: Set up Oracle JDK 21
         uses: actions/setup-java@v4
         with:
@@ -21,11 +27,25 @@ jobs:
           distribution: 'oracle'
           cache: maven
 
-      - name: Build application (skip tests)
+      # 3️⃣ Build application (skip tests)
+      - name: Build application
         run: mvn clean package -DskipTests
 
+      # 4️⃣ Upload artifact (optional)
       - name: Upload JAR artifact
         uses: actions/upload-artifact@v4
         with:
           name: spring-boot-app
           path: target/*.jar
+
+      # 5️⃣ SonarQube scan
+      - name: SonarQube Analysis
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        run: |
+          mvn sonar:sonar \
+            -DskipTests \
+            -Dsonar.projectKey=spring-boot-app \
+            -Dsonar.host.url=${{ secrets.SONAR_HOST_URL }} \
+            -Dsonar.branch.name=main \
+            -Dsonar.scm.provider=git
