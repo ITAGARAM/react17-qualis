@@ -8,9 +8,9 @@ on:
 
 jobs:
   build:
-    #runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
     # If your SonarQube server is local, use:
-    runs-on: self-hosted
+    # runs-on: self-hosted
 
     steps:
       # 1️⃣ Checkout code (full history required for SonarQube)
